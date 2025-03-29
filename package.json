@@ -17,5 +17,9 @@
     "url": "https://github.com/walalee/Backend-Air-Quality-System/issues"
   },
   "homepage": "https://github.com/walalee/Backend-Air-Quality-System#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7"
+  }
 }
