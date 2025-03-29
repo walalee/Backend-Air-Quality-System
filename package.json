@@ -1,21 +1,21 @@
 {
-  "name": "backend-freshtrack",
+  "name": "backend-air-quality-system",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "dependencies": {
-    "expo": "~52.0.41",
-    "expo-status-bar": "~2.0.1",
-    "react": "18.3.1",
-    "react-native": "0.76.7"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walalee/Backend-Air-Quality-System.git"
   },
-  "devDependencies": {
-    "@babel/core": "^7.20.0"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walalee/Backend-Air-Quality-System/issues"
   },
-  "private": true
+  "homepage": "https://github.com/walalee/Backend-Air-Quality-System#readme",
+  "description": ""
 }
