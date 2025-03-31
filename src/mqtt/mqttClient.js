@@ -1,7 +1,7 @@
 const mqtt = require("mqtt");
 const DataModel = require("../models/DataModel");
 
-const mqttClient = mqtt.connect("mqtt://your-mqtt-broker");
+const mqttClient = mqtt.connect("mqtt:// broker.emqx.io:1883");
 
 mqttClient.on("connect", () => {
     console.log("Connected to MQTT Broker");
