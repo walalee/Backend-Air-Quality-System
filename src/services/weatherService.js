@@ -1,15 +1,17 @@
-const axios = require("axios");
+const axios = require('axios');
 
-const getWeather = async () => {
+const getAirQuality = async (locationId) => {
     try {
-        const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=${process.env.OPENWEATHER_API_KEY}`
-        );
+        const response = await axios.get(`https://api.openaq.org/v3/locations/${locationId}`, {
+            headers: {
+                'X-API-Key': process.env.OPENAQ_API_KEY
+            }
+        });
         return response.data;
-    } catch (err) {
-        console.error("Error fetching weather:", err);
-        return null;
+    } catch (error) {
+        console.error('Error fetching air quality data:', error);
+        throw error;
     }
 };
 
-module.exports = { getWeather };
+module.exports = { getAirQuality };
